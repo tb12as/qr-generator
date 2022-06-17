@@ -10,7 +10,7 @@ class QRController extends ApiController
     public function generate(Request $request)
     {
         $request->validate([
-            'text' => 'required|string|min:20',
+            'text' => 'required|string|min:5',
         ]);
 
         return $this->json([
